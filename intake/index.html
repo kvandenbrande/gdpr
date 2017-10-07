@@ -1,0 +1,345 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>GDPR input form</title>
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="lolliclock-master/lolliclock.css"/>
+		<link rel="shortcut icon" href="css/images/favicon.ico">
+
+
+      <!--Let browser know website is optimized for mobile-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  </head>
+  <body>
+    <div class="logo">
+      <img src="css/images/gdpr.png"/>
+      <a href="pdf/hulpkaart.pdf" target="_blank"><img src="css/images/help.png" align="right"></a>
+      <br>
+      <i>Privacy is not up for discussion</i>
+
+    </div>
+    <h4>EU General Data Protection Regulation</h4>
+    <div class="inputWrap center">
+      <div class="input-field col s6">
+        <input id="Contact" type="text">
+        <label for="icon_prefix">Contact</label>
+      </div>
+      <!--<div class="input-field col s6">
+        <i class="material-icons prefix">home</i>
+        <input id="icon_home" type="tel" class="validate">
+        <label for="icon_telephone">Entity</label>
+      </div>-->
+        <div class="input-field col s6">
+          <select id="Entity">
+            <option value="Antwerpen">Antwerpen</option>
+            <option value="Kempen">Kempen</option>
+            <option value="Mechelen">Mechelen</option>
+            <option value="Limburg">Limburg</option>
+            <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+            <option value="West-Vlaanderen">West-Vlaanderen</option>
+            <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+            <option value="Voka vzw">Voka vzw</option>
+          </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card transparent">
+            <div class="card-content white-text">
+              <span class="card-title">PRIVACY</span>
+                <div class="input-field">
+                 <textarea id="Procesnaam" class="materialize-textarea default"></textarea>
+                  <label>Procesnaam:</label>
+                </div>
+                <div class="inputWrap">
+                  <div class="input-field col s12">
+                    <select id="Notie">
+                      <option value="Ja">Ja</option>
+                      <option value="Neen">Neen</option>
+                    </select>
+                  <label class="inputTitle">Op de hoogte:</label>
+                  </div>
+                </div>
+                <div class="inputWrap">
+                  <div class="input-field col s12">
+                    <select id="Akkoord">
+                      <option value="Ja">Ja</option>
+                      <option value="Neen">Neen</option>
+                    </select>
+                  <label class="inputTitle">Akkoord:</label>
+                  </div>
+                </div>
+                <div class="inputWrap">
+                  <div class="input-field col s12">
+                    <select id="Inzagerecht">
+                      <option value="Ja, op vraag">Ja, op vraag</option>
+                      <option value="Ja, zelf beheerbaar">Ja, zelf beheerbaar</option>
+                      <option value="Neen">Neen</option>
+                    </select>
+                  <label class="inputTitle">Inzagerecht:</label>
+                  </div>
+                </div>
+                <div class="inputWrap">
+                  <div class="input-field col s12">
+                    <select id="Verbeterrecht">
+                      <option value="Ja, op vraag">Ja, op vraag</option>
+                      <option value="Ja, zelf beheerbaar">Ja, zelf beheerbaar</option>
+                      <option value="Neen">Neen</option>
+                    </select>
+                  <label class="inputTitle">Verbeterrecht:</label>
+                  </div>
+                </div>
+                <div class="inputWrap">
+                  <div class="input-field col s12">
+                    <select id="Verwijderrecht">
+                      <option value="Ja, op vraag">Ja, op vraag</option>
+                      <option value="Ja, zelf beheerbaar">Ja, zelf beheerbaar</option>
+                      <option value="Neen">Neen</option>
+                    </select>
+                  <label class="inputTitle">Verwijderrecht:</label>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m8">
+          <div class="card transparent">
+            <div class="card-content white-text">
+              <span class="card-title">MOTIVATIE</span>
+              <div class="input-field">
+               <textarea id="Info" class="materialize-textarea default"></textarea>
+                <label>Om welke data gaat het:</label>
+              </div>
+              <div class="input-field">
+               <textarea id="Motivation" class="materialize-textarea default"></textarea>
+                <label>Waarom heb je deze data nodig:</label>
+              </div>
+              <div class="input-field">
+               <textarea id="Timeframe" class="materialize-textarea default"></textarea>
+                <label>Voor hoelang heb je deze data nodig:</label>
+              </div>
+              <div class="input-field">
+                <textarea id="KeyUsers" class="materialize-textarea default"></textarea>
+                <label>Key-Users:</label>
+              </div>
+              <div class="input-field">
+               <textarea id="MotRemarks" class="materialize-textarea default"></textarea>
+                <label>Opmerkingen:</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card transparent">
+            <div class="card-content white-text">
+              <span class="card-title">TOEGANG</span>
+              <div class="inputWrap">
+                <div class="input-field col s12">
+                  <select id="Owner">
+                    <option value="Externe partij">Externe partij</option>
+                    <option value="Entiteit">Entiteit</option>
+                    <option value="Voka">Voka</option>
+                  </select>
+                <label class="inputTitle">Wie is eigenaar van de data:</label>
+                </div>
+              </div>
+              <div class="input-field">
+                <textarea id="AccessControl" class="materialize-textarea default"></textarea>
+                <label>Wie beheert de toegang:</label>
+              </div>
+              <div class="input-field">
+               <textarea id="AccRemarks" class="materialize-textarea default"></textarea>
+                <label>Opmerkingen:</label>
+              </div>
+            <details> <summary>Gaat de data buiten de organisatie (->)</summary>
+              <div class="input-field">
+                <textarea id="ExportContact" class="materialize-textarea default"></textarea>
+                <label>Naar wie gaat deze data:</label>
+              </div>
+              <div class="input-field">
+                <textarea id="ExportReason" class="materialize-textarea default"></textarea>
+                <label>Waarom gaat de data extern:</label>
+              </div>
+              <div class="inputWrap">
+                <div class="input-field col s12">
+                  <select id="ExportContract">
+                    <option value="NvT">NvT</option>
+                    <option value="Ja">Ja</option>
+                    <option value="Neen">Neen</option>
+                  </select>
+                <label class="inputTitle">Is er een contract met de externe partij:</label>
+                </div>
+              </div>
+              <div class="input-field">
+                <textarea id="ExportRemarks" class="materialize-textarea default"></textarea>
+                <label>Opmerkingen:</label>
+              </div>
+            </details>
+            <details> <summary>Kan iemand buiten de organisatie aan de data (<-)</summary>
+              <div class="input-field">
+                <textarea id="ExternalContact" class="materialize-textarea default"></textarea>
+                <label>Wie kan aan deze data:</label>
+              </div>
+              <div class="input-field">
+                <textarea id="ExternalReason" class="materialize-textarea default"></textarea>
+                <label>Waarom kunnen zij aan onze data:</label>
+              </div>
+              <div class="inputWrap">
+                <div class="input-field col s12">
+                  <select id="ExternalContract">
+                    <option value="NvT">NvT</option>
+                    <option value="Ja">Ja</option>
+                    <option value="Neen">Neen</option>
+                  </select>
+                <label class="inputTitle">Is er een contract met de externe partij:</label>
+                </div>
+              </div>
+              <div class="input-field">
+                <textarea id="ExternalRemarks" class="materialize-textarea default"></textarea>
+                <label>Opmerkingen:</label>
+              </div>
+            </details>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card transparent">
+            <div class="card-content white-text">
+                <span class="card-title">DOCUMENTATIE</span>
+                <div class="inputWrap">
+                  <div class="input-field col s12">
+                    <select id="Procedure">
+                      <option value="Ja">Ja</option>
+                      <option value="Neen">Neen</option>
+                    </select>
+                  <label class="inputTitle">Procedure aanwezig:</label>
+                  </div>
+                </div>
+                <div class="inputWrap">
+                  <div class="input-field col s12">
+                    <select id="Policy">
+                      <option value="Ja">Ja</option>
+                      <option value="Neen">Neen</option>
+                    </select>
+                  <label class="inputTitle">Policy aanwezig:</label>
+                  </div>
+                </div>
+                <div class="input-field">
+                 <textarea id="DocRemarks" class="materialize-textarea default"></textarea>
+                  <label>Opmerkingen:</label>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="col s12 m8">
+        <div class="card transparent">
+          <div class="card-content white-text">
+            <span class="card-title">TECHNISCH</span>
+            <div class="inputWrap">
+              <div class="input-field col s12">
+                <select id="Storage">
+                  <option value="Cloud">Cloud</option>
+                  <option value="Fileserver">Fileserver</option>
+                  <option value="PC">PC</option>
+                  <option value="Verwijderbaar media">Verwijderbare media</option>
+                  <option value="Paper">Papier</option>
+                </select>
+              <label class="inputTitle">Opslagmedium:</label>
+              </div>
+            </div>
+            <div class="inputWrap">
+              <div class="input-field col s12">
+                <select id="Encryption">
+                  <option value="Ja">Ja</option>
+                  <option value="Neen">Neen</option>
+                </select>
+              <label class="inputTitle">Encryptie:</label>
+              </div>
+            </div>
+          <details> <summary>Is er een backup van de data</summary>
+            <div class="inputWrap">
+              <div class="input-field col s12">
+                <select id="Backupstorage">
+                  <option value="Paper">Geen backup aanwezig</option>
+                  <option value="Cloud">Cloud</option>
+                  <option value="Fileserver">Fileserver</option>
+                  <option value="PC">PC</option>
+                  <option value="Verwijderbaar media">Verwijderbare media</option>
+                  <option value="Paper">Papier</option>
+                </select>
+              <label class="inputTitle">Backup opslagmedium:</label>
+              </div>
+            </div>
+            <div class="inputWrap">
+              <div class="input-field col s12">
+                <select id="Backupencryption">
+                  <option value="NvT">NvT</option>
+                  <option value="Ja">Ja</option>
+                  <option value="Neen">Neen</option>
+                </select>
+              <label class="inputTitle">Backup encryptie:</label>
+              </div>
+            </div>
+            <div class="input-field">
+             <textarea id="Backuptime" class="materialize-textarea default"></textarea>
+              <label>Hoelang blijft de backup bestaan:</label>
+            </div>
+          </details>
+            <div class="input-field">
+             <textarea id="TecRemarks" class="materialize-textarea default"></textarea>
+              <label>Opmerkingen:</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttonWrap">
+      <button class="waves-effect waves-light btn real-red" id="DownloadButton"><i class="material-icons right">get_app</i>Submit to XML</button>
+    </div>
+    <div id="generated" style="display:none">
+      <h2>XML</h2>
+      <a href="#" id="DownloadLink">Download</a>
+      <textarea id="ResultXml" style="width: 100%; height: 30em" readonly="readonly"></textarea>
+    </div>
+  </body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/htmlXML.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="lolliclock-master/lolliclock.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('select').material_select();
+      $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 5 // Creates a dropdown of 15 years to control year
+  });
+        $('#pick-a-time').lolliclock({autoclose:true});
+    });
+
+    //this toggles the visibility of our parent permission fields depending on the current selected value of the underAge field
+    /*function toggleFields() {
+        if ($("#Export").val() ='Neen')
+            $("#ExportContact").hide();
+            $("#ExportReason").hide();
+            $("#ExportContract").hide();
+            $("#ExportRemarks").hide();
+        else
+            $("#ExportContact").show();
+            $("#ExportReason").show();
+            $("#ExportContract").show();
+            $("#ExportRemarks").show();
+    };*/
+    </script>
+</html>
