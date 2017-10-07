@@ -1,0 +1,1 @@
+# gdpr uitleg binnen Voka
